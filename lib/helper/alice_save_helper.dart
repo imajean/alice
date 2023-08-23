@@ -92,7 +92,8 @@ class AliceSaveHelper {
           "Success",
           "Successfully saved logs in ${file.path}",
           secondButtonTitle: isAndroid ? "View file" : null,
-          secondButtonAction: () => isAndroid ? OpenFilex.open(file.path) : null,
+          secondButtonAction: () =>
+              isAndroid ? OpenFilex.open(file.path) : null,
           brightness: brightness,
         );
         return file.path;
